@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 export const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(`${process.env.MONGODB_URI}/StoryLink`);
+    const conn = await mongoose.connect(`${process.env.MONGODB_URI}/SocialMediaDB`,);
     console.log(`Database connected: ${ conn.connection.host }`);
   }
   catch (error) {
